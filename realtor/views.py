@@ -9,3 +9,11 @@ from rest_framework import generics
 class RealtorList(generics.ListAPIView):
     queryset = Realtor.objects.all()
     serializer_class = RealtorSerializer
+
+
+def list_realtor(request):
+    realist = Realtor.objects.all()
+    context = {
+        'realist': realist
+    }
+    return render(request, 'Listing/realtor.html', context)
