@@ -3,6 +3,6 @@ from .views import ListingList, listview
 
 urlpatterns = [
     path('listapi/', ListingList.as_view()),
-    path('list_/', listview, name='list_listing'),
+    path('currentlists/', listview, name='list_listing'),
 
 ]

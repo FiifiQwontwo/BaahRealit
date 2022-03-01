@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% block content %}
+{% for ase in ase %}
+    {{ ase.title}}
+    {{ ase.realtor.name_of_agency }}
+    {{ ase.currency.currency_symbol }} {{ ase.price_per_month }}
+    ||{{ ase.realtor.phone_number }}||
+    <img src="{{MEDIA_URL}}{{ase.main_image}}"/><br>
 
-</body>
-</html>
+
+
+    {% endfor %}
+{% endblock %}
