@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.template.defaultfilters import slugify  # new
 
 
-# from phone_field import PhoneField
+
 
 
 # Create your models here.
