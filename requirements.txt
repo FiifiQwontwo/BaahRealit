@@ -1,0 +1,12 @@
+Django==3.2.11
+django-decouple==2.0
+djangorestframework==3.12.4
+mysqlclient==2.0.3
+Pillow==8.4.0
+PyMySQL==1.0.2
+mysql-connector-python==8.0.24
+
+
+
+
+
