@@ -101,7 +101,7 @@ DATABASES = {
         'NAME': 'rubg',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': 'admin_db',
+        'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
             'sql_mode': 'traditional'
@@ -167,14 +167,3 @@ AWS_SES_REGION_ENDPOINT = config('AWS_SES_REGION_ENDPOINT')
 
 AUTH_USER_MODEL = 'accounts.User'
 
-#
-# SOCIAL_AUTH_USER_FIELDS = ['email', 'last_name', 'username', 'password']
-#
-# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY')
-# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET')
-
-# Define SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE to get extra permissions from Google.
-# SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
-#     'https://www.googleapis.com/auth/userinfo.email',
-#     'https://www.googleapis.com/auth/userinfo.profile',
-# ]
